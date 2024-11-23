@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="StudentManagementSystem.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Management System</h1>
+        <div>
+            <img src="https://wpschoolpress.com/wp-content/uploads/2023/03/student-management-system.png" width="600px" alt="">
+        </div>
+
+        <!-- Student Count Section -->
+        <section id="counts">
+            <h2>Counts</h2>
+            <div>
+                <p><strong>Number of Students: </strong><span id="student-count">0</span></p>
+                <p><strong>Number of Employees: </strong><span id="employee-count">0</span></p>
+            </div>
+        </section>
+
+        <!-- Add Student Section -->
+        <section id="add-student">
+            <h2>Add Student</h2>
+            <input type="text" id="student-name" placeholder="Enter student name">
+            <input type="text" id="student-dob" placeholder="Enter student date of birth (DD/MM/YYYY)">
+            <input type="text" id="student-department" placeholder="Enter student department">
+            <input type="text" id="student-section" placeholder="Enter student section">
+            <button onclick="addStudent()">Add Student</button>
+        </section>
+
+        <!-- Update Student Section -->
+        <section id="update-student">
+            <h2>Update Student</h2>
+            <input type="number" id="update-student-id" placeholder="Enter student ID to update">
+            <input type="text" id="update-student-name" placeholder="Enter new name">
+            <input type="text" id="update-student-dob" placeholder="Enter new DOB">
+            <button onclick="updateStudent()">Update Student</button>
+        </section>
+
+        <!-- Remove Student Section -->
+        <section id="remove-student">
+            <h2>Remove Student</h2>
+            <input type="number" id="remove-student-id" placeholder="Enter student ID to remove">
+            <button onclick="removeStudent()">Remove Student</button>
+        </section>
+
+        <!-- View All Students Section -->
+        <section id="view-students">
+            <h2>All Students</h2>
+            <button onclick="viewStudents()">View Students</button>
+            <div id="student-list"></div>
+        </section>
+
+        <!-- Calendar Section -->
+        <section id="calendar">
+            <h2>Calendar</h2>
+            <button onclick="generateCalendar()">Generate Calendar</button>
+            <div id="calendar-view"></div>
+        </section>
+
+        <!-- Announcements Section -->
+        <section id="announcements">
+            <h2>Announcements</h2>
+            <textarea id="announcement-input" placeholder="Enter new announcement"></textarea>
+            <button onclick="addAnnouncement()">Add Announcement</button>
+            <div id="announcement-list"></div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule">
+            <h2>Schedule</h2>
+            <textarea id="schedule-input" placeholder="Enter new schedule"></textarea>
+            <button onclick="addSchedule()">Add Schedule</button>
+            <div id="schedule-list"></div>
+        </section>
+    </div>
+
+    <script src="StudentManagementSystem.js"></script>
+</body>
+</html>

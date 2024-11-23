@@ -1,0 +1,126 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 10px solid #00698f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Heading Styling */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00698f;
+    text-shadow: 2px 2px 5px #cccccc;
+  }
+  
+  /* Section Styling */
+  section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 5px solid #0097e6;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sub-heading Styling */
+  h2 {
+    margin-top: 0;
+    color: #0097e6;
+    text-shadow: 2px 2px 5px #cccccc;
+  }
+  
+  /* Input Fields Styling */
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #0097e6;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Times New Roman', serif;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #00698f;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Times New Roman', serif;
+  }
+  
+  button:hover {
+    background-color: #003d5c;
+  }
+  
+  /* Student Record Styling */
+  .student {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 5px solid #0097e6;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .student p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman', serif;
+  }
+  
+  /* Calendar Styling */
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .calendar-day {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 5px solid #0097e6;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Times New Roman', serif;
+  }
+  
+  /* Announcement and Schedule Styling */
+  .announcement,
+  .schedule {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 5px solid #0097e6;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .announcement p,
+  .schedule p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman', serif;
+  }
+  
